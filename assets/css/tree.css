@@ -1,0 +1,449 @@
+/**
+ * 世系图样式 — 横向/竖向双布局 + 单向箭头 + 平面金色
+ * PHP 7.4+ 本地化，零外部依赖
+ *
+ * 连接线架构：
+ *   横向：父 ──▶┬──▶ 子  （水平线+右箭头 → border-left垂直主干 → 水平线+右箭头）
+ *   竖向：父 ──▶──┬──▶ 子  （垂线+下箭头 → border-top水平分支 → 垂线+下箭头）
+ */
+
+/* ========== 缩放平移视口 ========== */
+.tree-viewport {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    max-height: 70vh;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e0d5c5;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.tree-viewport:active { cursor: grabbing; }
+
+/* 全屏模式 */
+.tree-viewport:fullscreen,
+.tree-viewport:-webkit-full-screen {
+    max-height: 100vh; border-radius: 0; border: none; background: #fff;
+}
+.tree-viewport:fullscreen .tree-scroll,
+.tree-viewport:-webkit-full-screen .tree-scroll { padding: 60px; }
+
+.tree-scroll {
+    display: inline-block; min-width: 100%; transition: none; padding: 50px;
+}
+.tree-container { padding: 10px; }
+
+/* ========== 树形结构基础 ========== */
+.tree, .tree ul { list-style: none; margin: 0; padding: 0; }
+
+/* ========== 连线全局变量 ========== */
+:root {
+    --tree-line: #dc2626;      /* 朱红色连接线 */
+    --tree-line-w: 2px;        /* 线宽 */
+    --arrow-size: 6px;         /* 箭头半高 */
+}
+
+/* ================================================================
+ *                        横向布局（左→右）
+ * ================================================================ */
+
+.tree { display: flex; justify-content: center; }
+
+/* 节点项：横向排列 */
+.tree li {
+    display: flex; flex-direction: row; align-items: center;
+    position: relative; padding: 8px 0;
+}
+
+/*
+ * 子节点容器：
+ *   - padding-left 留出空间给连接线
+ *   - border-left 作为贯穿所有子节点的垂直主干
+ *   - margin-left 微调让主干与水平线对齐
+ */
+.tree li > ul {
+    display: flex; flex-direction: column; justify-content: center;
+    padding-left: 56px; position: relative;
+    border-left: var(--tree-line-w) solid var(--tree-line);
+    margin-left: 3px;
+}
+
+/*
+ * 层级1：父节点 → 垂直主干 的水平连线 + 右箭头 ▶
+ * ::before = 水平线段（从父节点方向延伸到主干位置）
+ * ::after  = 右箭头（在线段末端，指向主干）
+ */
+.tree li > ul::before {
+    content: ''; position: absolute;
+    left: -54px; top: 50%;
+    width: 51px; height: var(--tree-line-w);
+    background: var(--tree-line);
+    transform: translateY(-50%);
+}
+.tree li > ul::after {
+    content: ''; position: absolute;
+    left: -4px; top: 50%;           /* 在 border-left 左边缘 */
+    border-top: var(--arrow-size) solid transparent;
+    border-bottom: var(--arrow-size) solid transparent;
+    border-left: 8px solid var(--tree-line);   /* ▶ 形状 */
+    transform: translateY(-50%);
+}
+
+/*
+ * 层级2：垂直主干 → 各子节点 的水平连线 + 右箭头 ▶
+ * li::before = 水平线段（从主干延伸到子节点）
+ * li::after  = 右箭头（在子节点左侧，指向子节点）
+ */
+.tree ul > li::before {
+    content: ''; position: absolute;
+    left: -53px; top: 50%;
+    width: 48px; height: var(--tree-line-w);
+    background: var(--tree-line);
+    transform: translateY(-50%);
+}
+.tree ul > li::after {
+    content: ''; position: absolute;
+    left: -7px; top: 50%;            /* 紧贴子节点左边框外 */
+    border-top: var(--arrow-size) solid transparent;
+    border-bottom: var(--arrow-size) solid transparent;
+    border-left: 8px solid var(--tree-line);   /* ▶ 形状 */
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+
+/* ================================================================
+ *                        竖向布局（上→下）
+ *
+ *  目标效果：
+ *          [父节点]
+ *             │
+ *             ▼
+ *      ───────┬───────     ← 水平分支栏 (border-top)
+ *      │      │      │
+ *      ▼      ▼      ▼
+ *   [子1]  [子2]  [子3]
+ *
+ *  伪元素分配：
+ *    li > ul::before = 父→分支栏 垂直线 + ▼箭头(合体，用背景渐变+border实现)
+ *    li > ul::after  = 不用（display:none），被上面的规则覆盖
+ *    li > ul         = border-top 水平分支栏
+ *    ul > li::before = 分支栏→子节点 垂直线
+ *    ul > li::after  = ▼ 下箭头
+ * ================================================================ */
+
+.layout-vertical .tree {
+    display: flex; justify-content: center;
+    flex-direction: column; align-items: center;
+}
+.layout-vertical .tree li {
+    display: flex; flex-direction: column; align-items: center;
+    padding: 0 10px;
+}
+
+/*
+ * 子节点容器：横向排列，上方留空间给连接线
+ */
+.layout-vertical .tree li > ul {
+    display: flex; flex-direction: row; justify-content: center;
+    padding-left: 0; padding-top: 36px;     /* 连接线区域高度 */
+    border-left: none; margin-left: 0;
+    position: relative;
+    border-top: var(--tree-line-w) solid var(--tree-line);  /* 水平分支栏 */
+}
+
+/* ★ 关键修复：禁用横向布局渗透过来的伪元素 ★ */
+.layout-vertical .tree li > ul::before { display: none !important; }
+.layout-vertical .tree li > ul::after  { display: none !important; }
+
+/*
+ * 竖向层级2：每个子节点的垂直连接线 + ▼ 箭头
+ * 从 border-top（分支栏）向下延伸到子节点顶部
+ */
+.layout-vertical .tree li > ul {
+    padding-top: 30px;
+    border-top: var(--tree-line-w) solid var(--tree-line);  /* 分支栏 */
+    position: relative;
+}
+/* 禁用横向渗透 */
+.layout-vertical .tree li > ul::before { display: none !important; }
+.layout-vertical .tree li > ul::after { display: none !important; }
+
+/*
+ * 竖向层级2：每个子节点的垂直连接线 + ▼ 箭头
+ * 从 border-top（分支栏）向下延伸到子节点顶部
+ */
+.layout-vertical .tree ul > li {
+    position: relative;
+}
+.layout-vertical .tree ul > li::before {
+    content: ''; position: absolute;
+    left: 50%;
+    top: -30px;               /* 向上延伸到 border-top 所在位置 */
+    width: var(--tree-line-w);
+    height: 24px;              /* 垂直线长度（到达箭头起点） */
+    background: var(--tree-line);
+    transform: translateX(-50%);
+}
+.layout-vertical .tree ul > li::after {
+    content: ''; position: absolute;
+    left: 50%;
+    top: -8px;                 /* 垂线下端 → ▼ 箭头尖端指向子节点 */
+    border-left: var(--arrow-size) solid transparent;
+    border-right: var(--arrow-size) solid transparent;
+    border-top: 8px solid var(--tree-line);   /* ▼ 下箭头 */
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+/* 唯一子节点：更短的连接线 */
+.layout-vertical .tree ul > li:only-child::before {
+    height: 20px; top: -26px;
+}
+.layout-vertical .tree ul > li:only-child::after {
+    top: -8px;                  /* 箭头位置不变 */
+}
+
+
+/* ========== 节点样式 — 平面金色 ========== */
+.node-content {
+    position: relative; min-width: 100px; max-width: 160px;
+    padding: 12px 16px; text-align: center; border-radius: 6px;
+    font-family: "SimSun", "宋体", serif;
+    cursor: default; transition: background 0.2s;
+    flex-shrink: 0; z-index: 2;
+    background: #fef5e0;
+    border: 1.5px solid #b8860b; color: #2c1800;
+}
+.node-content:hover { background: #fef0cc; border-color: #daa520; }
+
+/* 男性 — 深金 */
+.node-content.male { background: #fdf3d0; border-color: #8b6914; }
+.node-content.male:hover { background: #fbeca0; border-color: #b8860b; }
+.node-content.male .node-avatar { background: #8b6914; }
+.node-content.male .node-name { color: #3d2200; }
+.node-content.male .node-gen { background: rgba(139,105,20,.1); color: #6b4e0a; }
+
+/* 女性 — 玫瑰金 */
+.node-content.female { background: #fef5f0; border-color: #b07040; }
+.node-content.female:hover { background: #fce8dc; border-color: #c08050; }
+.node-content.female .node-avatar { background: #c08050; }
+.node-content.female .node-name { color: #3d1800; }
+.node-content.female .node-gen { background: rgba(176,112,64,.1); color: #7a3c1a; }
+
+/* 头像 */
+.node-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: #daa520; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 17px; font-weight: bold;
+    font-family: "KaiTi", "楷体", serif;
+    margin: 0 auto 8px; border: 2px solid rgba(255,215,0,.4);
+}
+
+/* 信息区 */
+.node-info { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.node-name { font-size: 14px; font-weight: 700; color: #2c1800; }
+.node-gen {
+    font-size: 11px; color: #8B6914;
+    background: rgba(139,105,20,.1); padding: 1px 8px; border-radius: 8px;
+    font-family: "KaiTi", "楷体", serif;
+}
+.node-date { font-size: 11px; color: #6b5a3e; font-family: "KaiTi", "楷体", serif; }
+
+/* 操作按钮 */
+.node-actions { display: flex; gap: 4px; margin-top: 6px; opacity: 0; transition: opacity 0.2s; }
+.node-content:hover .node-actions { opacity: 1; }
+.btn-tiny {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; border-radius: 50%; font-size: 12px;
+    background: #8b6914; color: #ffd700;
+    text-decoration: none; border: 1px solid #daa520;
+    cursor: pointer; transition: all 0.2s;
+}
+.btn-tiny:hover { background: #b8860b; transform: scale(1.1); }
+
+
+/* ========== 打印优化 ========== */
+@media print {
+    .site-header, .site-footer, .action-bar, .node-actions,
+    .zoom-controls, .stats-row, #list-view,
+    .card:not(#tree-view) { display: none !important; }
+    .tree-viewport {
+        overflow: visible !important; border: none !important;
+        max-height: none !important; background: #fff !important;
+    }
+    .tree-scroll { transform: none !important; padding: 20px !important; }
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* ========== 缩放控制 ========== */
+.zoom-controls {
+    display: inline-flex; align-items: center; gap: 4px;
+    margin-left: 12px; padding: 2px 10px;
+    background: #fef5e0; border: 1px solid #b8860b; border-radius: 6px;
+}
+.zoom-label {
+    font-size: 13px; color: #8B6914; min-width: 40px;
+    text-align: center; font-variant-numeric: tabular-nums;
+}
+
+/* ========== 分享弹窗 ========== */
+.share-link-box {
+    background: #fdf9f0; border: 1px solid #c8b896;
+    padding: 10px; border-radius: 6px;
+}
+.share-link-box input { background: #fff; border: 1px solid #c8b896; color: #4a3020; }
+
+/* ========== 操作栏 / 搜索框 ========== */
+.action-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+.tree-search { display: inline-flex; align-items: center; gap: 6px; }
+.tree-search input {
+    padding: 5px 10px; border: 1px solid #ddd; border-radius: 4px;
+    font-size: 13px; width: 140px;
+}
+.tree-search input:focus { outline: none; border-color: #b8860b; }
+
+
+/* ========== 移动端适配 ========== */
+@media (max-width: 768px) {
+    .tree-viewport { max-height: 50vh; }
+    .tree-scroll { padding: 30px 20px; }
+
+    /* 横向移动端：缩小间距和线长 */
+    .tree li > ul { padding-left: 38px; }
+    .tree li > ul::before { width: 34px; left: -36px; }
+    .tree li > ul::after { left: -3px; }
+    .tree ul > li::before { left: -36px; width: 30px; }
+    .tree ul > li::after { left: -8px; }
+
+    /* 节点缩小 */
+    .node-content { min-width: 70px; max-width: 120px; padding: 10px 12px; border-radius: 5px; border-width: 1px; }
+    .node-name { font-size: 12px; }
+    .node-avatar { width: 32px; height: 32px; font-size: 14px; }
+    .node-gen { font-size: 10px; padding: 1px 6px; }
+    .node-date { font-size: 10px; }
+    .tree-search input { width: 100px; }
+
+    /* 竖向移动端 */
+    .layout-vertical .tree li > ul { padding-top: 26px; }
+    .layout-vertical .tree ul > li::before { height: 20px; top: -26px; }
+    .layout-vertical .tree ul > li::after { top: -8px; }
+}
+
+@media (max-width: 480px) {
+    .tree-viewport { max-height: 40vh; }
+    .tree-scroll { padding: 20px 12px; }
+
+    /* 更紧凑 */
+    .tree li > ul { padding-left: 28px; }
+    .tree li > ul::before { width: 24px; left: -26px; }
+    .tree li > ul { border-left-width: 1px; }
+    .tree ul > li::before { left: -26px; width: 20px; }
+    .tree ul > li::after { left: -8px; }
+
+    :root { --tree-line-w: 1px; --arrow-size: 5px; }
+    .tree li > ul::after { border-left-width: 7px; }
+    .tree ul > li::after { border-left-width: 7px; }
+    .layout-vertical .tree ul > li::after { border-top-width: 7px; }
+    .layout-vertical .tree li > ul { padding-top: 22px; }
+    .layout-vertical .tree ul > li::before { height: 16px; top: -22px; }
+    .layout-vertical .tree ul > li::after { top: -8px; }
+    .layout-vertical .tree ul > li:only-child::before { height: 14px; top: -18px; }
+
+    .node-content { min-width: 56px; max-width: 90px; padding: 7px 8px; border-radius: 4px; border-width: 1px; }
+    .node-name { font-size: 11px; }
+    .node-avatar { width: 26px; height: 26px; font-size: 12px; margin-bottom: 4px; border-width: 1px; }
+    .node-gen { font-size: 9px; }
+    .node-date { font-size: 9px; }
+    .btn-tiny { width: 20px; height: 20px; font-size: 10px; }
+    .tree-search input { width: 80px; padding: 4px 6px; }
+}
+
+/* ========== 世系树缩略图（纯CSS可折叠） ========== */
+.tree-thumb {
+    background: var(--bg-alt, #fafaf8);
+    border: 1px solid var(--border-light, #e8e4d8);
+    border-radius: var(--radius-lg, 10px);
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+.tree-thumb-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 16px; cursor: pointer;
+    background: linear-gradient(135deg, #fdf8f0, #faf6ec);
+    border-bottom: 1px solid var(--border-light, #e8e4d8);
+}
+.tree-thumb-header h3 { margin: 0; font-size: 14px; color: var(--text-primary, #333); }
+.tree-thumb-toggle {
+    background: none; border: 1px solid var(--border); border-radius: 50%;
+    width: 24px; height: 24px; cursor: pointer;
+    font-size: 14px; line-height: 1; transition: transform 0.3s;
+    color: var(--text-secondary, #999);
+}
+.tree-thumb.collapsed .tree-thumb-body { display: none; }
+.tree-thumb.collapsed .tree-thumb-toggle { transform: rotate(-90deg); }
+
+.tree-thumb-body {
+    padding: 12px 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.tree-thumb-body ul {
+    display: flex; flex-direction: column;
+    list-style: none; margin: 0; padding: 0;
+    position: relative;
+}
+.tree-thumb-body ul ul {
+    margin-left: 20px; padding-left: 12px;
+    border-left: 1px solid #c4982e;
+    position: relative;
+}
+.tree-thumb-body li {
+    position: relative; padding: 2px 0;
+}
+.tree-thumb-body li::before {
+    content: ''; position: absolute;
+    left: -12px; top: 50%;
+    width: 12px; height: 1px;
+    background: #c4982e;
+}
+.thumb-node {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 3px 8px; border-radius: 4px;
+    background: #fff; border: 1px solid #e8e4d8;
+    font-size: 12px; cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+.thumb-node:hover {
+    border-color: #c4982e;
+    box-shadow: 0 2px 8px rgba(196,152,46,0.15);
+    transform: translateY(-1px);
+}
+.thumb-node .g-icon { font-style: normal; font-size: 10px; opacity: 0.6; }
+.thumb-node em {
+    font-style: normal; font-size: 9px;
+    background: #fdf3d0; color: #8B6914;
+    padding: 0 4px; border-radius: 3px;
+    margin-left: 2px;
+}
+
+/* 高亮闪烁动画 */
+@keyframes highlight-blink {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(196,152,46,0); }
+    50% { box-shadow: 0 0 0 6px rgba(196,152,46,0.3); }
+}
+.highlight-blink {
+    animation: highlight-blink 0.6s ease 4;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .tree-thumb-body { padding: 8px 10px; }
+    .tree-thumb-body ul ul { margin-left: 14px; padding-left: 8px; }
+}

@@ -1,0 +1,282 @@
+[14-Jun-2026 21:50:55 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 21:50:55 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[14-Jun-2026 21:50:55 Asia/Shanghai] PHP Stack trace:
+[14-Jun-2026 21:50:55 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[14-Jun-2026 21:51:01 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 21:51:01 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[14-Jun-2026 21:51:01 Asia/Shanghai] PHP Stack trace:
+[14-Jun-2026 21:51:01 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[14-Jun-2026 21:51:01 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 21:51:01 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 21:51:01 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[14-Jun-2026 21:51:01 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE ip = ? | Params: ["127.0.0.1"]
+[14-Jun-2026 21:51:01 Asia/Shanghai] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_login_ip' in 'field list' | SQL: UPDATE users SET last_login = NOW(), last_login_ip = ?, last_login_ua = ? WHERE id = ? | Params: ["127.0.0.1","Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36 QuarkPC\/6.7.7.829",2]
+[14-Jun-2026 21:59:42 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 21:59:42 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[14-Jun-2026 21:59:42 Asia/Shanghai] PHP Stack trace:
+[14-Jun-2026 21:59:42 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[14-Jun-2026 21:59:50 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 21:59:50 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[14-Jun-2026 21:59:50 Asia/Shanghai] PHP Stack trace:
+[14-Jun-2026 21:59:50 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[14-Jun-2026 21:59:50 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 21:59:50 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 21:59:50 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[14-Jun-2026 21:59:50 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE ip = ? | Params: ["127.0.0.1"]
+[14-Jun-2026 21:59:50 Asia/Shanghai] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_login_ip' in 'field list' | SQL: UPDATE users SET last_login = NOW(), last_login_ip = ?, last_login_ua = ? WHERE id = ? | Params: ["127.0.0.1","Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/130.0.0.0 Safari\/537.36 QuarkPC\/6.7.7.829",2]
+[14-Jun-2026 22:01:50 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 22:02:17 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 22:02:24 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 22:02:24 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[14-Jun-2026 22:02:24 Asia/Shanghai] PHP Stack trace:
+[14-Jun-2026 22:02:24 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[14-Jun-2026 22:02:32 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 22:02:32 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[14-Jun-2026 22:02:32 Asia/Shanghai] PHP Stack trace:
+[14-Jun-2026 22:02:32 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[14-Jun-2026 22:02:32 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 22:02:43 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 22:02:43 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[14-Jun-2026 22:02:43 Asia/Shanghai] PHP Stack trace:
+[14-Jun-2026 22:02:43 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[14-Jun-2026 22:02:43 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 22:02:43 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[14-Jun-2026 22:02:43 Asia/Shanghai] PHP Stack trace:
+[14-Jun-2026 22:02:43 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[14-Jun-2026 22:02:43 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 22:02:43 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[14-Jun-2026 22:02:43 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[14-Jun-2026 22:02:43 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE ip = ? | Params: ["127.0.0.1"]
+[14-Jun-2026 22:02:43 Asia/Shanghai] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_login_ip' in 'field list' | SQL: UPDATE users SET last_login = NOW(), last_login_ip = ?, last_login_ua = ? WHERE id = ? | Params: ["127.0.0.1","curl\/8.19.0",3]
+[26-Jun-2026 22:58:38 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:58:38 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[26-Jun-2026 22:58:38 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 22:58:38 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 22:58:45 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:58:45 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[26-Jun-2026 22:58:45 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 22:58:45 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 22:58:50 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:58:50 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[26-Jun-2026 22:58:50 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 22:58:50 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 22:58:50 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:58:50 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:58:50 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[26-Jun-2026 22:58:50 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[26-Jun-2026 22:58:50 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[26-Jun-2026 22:58:53 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:58:53 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[26-Jun-2026 22:58:53 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 22:58:53 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 22:58:53 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:58:53 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:58:53 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[26-Jun-2026 22:58:53 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[26-Jun-2026 22:58:53 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[26-Jun-2026 22:59:15 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:59:15 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[26-Jun-2026 22:59:15 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 22:59:15 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 22:59:15 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:59:15 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:59:15 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[26-Jun-2026 22:59:15 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[26-Jun-2026 22:59:15 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[26-Jun-2026 22:59:19 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:59:19 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[26-Jun-2026 22:59:19 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 22:59:19 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 22:59:19 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:59:19 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:59:19 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[26-Jun-2026 22:59:19 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[26-Jun-2026 22:59:19 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[26-Jun-2026 22:59:25 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:59:25 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[26-Jun-2026 22:59:25 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 22:59:25 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 22:59:59 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 22:59:59 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[26-Jun-2026 22:59:59 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 22:59:59 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 23:00:30 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:00:30 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[26-Jun-2026 23:00:30 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 23:00:30 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 23:00:34 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:00:34 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[26-Jun-2026 23:00:34 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 23:00:34 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 23:00:34 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:00:34 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:00:34 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[26-Jun-2026 23:00:34 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE ip = ? | Params: ["127.0.0.1"]
+[26-Jun-2026 23:00:34 Asia/Shanghai] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_login_ip' in 'field list' | SQL: UPDATE users SET last_login = NOW(), last_login_ip = ?, last_login_ua = ? WHERE id = ? | Params: ["127.0.0.1","Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/143.0.0.0 Safari\/537.36 Edg\/143.0.0.0",2]
+[26-Jun-2026 23:01:09 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:01:09 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[26-Jun-2026 23:01:09 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 23:01:09 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 23:01:36 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:01:36 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[26-Jun-2026 23:01:36 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 23:01:36 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 23:01:36 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:01:36 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:01:36 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[26-Jun-2026 23:01:36 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[26-Jun-2026 23:01:36 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[26-Jun-2026 23:03:48 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:03:48 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[26-Jun-2026 23:03:48 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 23:03:48 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 23:04:58 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:04:58 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[26-Jun-2026 23:04:58 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 23:04:58 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 23:05:02 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:05:02 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[26-Jun-2026 23:05:02 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 23:05:02 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 23:05:02 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:05:02 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:05:02 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[26-Jun-2026 23:05:02 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[26-Jun-2026 23:05:02 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[26-Jun-2026 23:05:05 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:05:05 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[26-Jun-2026 23:05:05 Asia/Shanghai] PHP Stack trace:
+[26-Jun-2026 23:05:05 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[26-Jun-2026 23:05:05 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:05:05 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[26-Jun-2026 23:05:05 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[26-Jun-2026 23:05:05 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[26-Jun-2026 23:05:05 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[29-Jun-2026 22:46:17 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:46:17 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[29-Jun-2026 22:46:17 Asia/Shanghai] PHP Stack trace:
+[29-Jun-2026 22:46:17 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[29-Jun-2026 22:46:23 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:46:23 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[29-Jun-2026 22:46:23 Asia/Shanghai] PHP Stack trace:
+[29-Jun-2026 22:46:23 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[29-Jun-2026 22:46:27 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:46:27 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[29-Jun-2026 22:46:27 Asia/Shanghai] PHP Stack trace:
+[29-Jun-2026 22:46:27 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[29-Jun-2026 22:46:27 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:46:27 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:46:27 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[29-Jun-2026 22:46:27 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[29-Jun-2026 22:46:27 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[29-Jun-2026 22:47:31 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:47:31 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[29-Jun-2026 22:47:31 Asia/Shanghai] PHP Stack trace:
+[29-Jun-2026 22:47:31 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[29-Jun-2026 22:47:36 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:47:36 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[29-Jun-2026 22:47:36 Asia/Shanghai] PHP Stack trace:
+[29-Jun-2026 22:47:36 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[29-Jun-2026 22:47:36 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:47:36 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:47:36 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[29-Jun-2026 22:47:36 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[29-Jun-2026 22:47:36 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[29-Jun-2026 22:47:39 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:47:39 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[29-Jun-2026 22:47:39 Asia/Shanghai] PHP Stack trace:
+[29-Jun-2026 22:47:39 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[29-Jun-2026 22:47:39 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:47:39 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:47:39 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[29-Jun-2026 22:47:39 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[29-Jun-2026 22:47:39 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[29-Jun-2026 22:47:43 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:47:43 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 30
+[29-Jun-2026 22:47:43 Asia/Shanghai] PHP Stack trace:
+[29-Jun-2026 22:47:43 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[29-Jun-2026 22:47:43 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:47:43 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:47:43 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[29-Jun-2026 22:47:43 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[29-Jun-2026 22:47:43 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[29-Jun-2026 22:47:55 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:47:55 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[29-Jun-2026 22:47:55 Asia/Shanghai] PHP Stack trace:
+[29-Jun-2026 22:47:55 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[29-Jun-2026 22:48:05 Asia/Shanghai] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'register_ip' in 'field list' | SQL: INSERT INTO users (username, email, password, nickname, role, status, register_ip, register_ua, created_at)
+                    VALUES (?, ?, ?, ?, 'user', 1, ?, ?, NOW()) | Params: ["ikun111","13931707523@163.com","$2y$10$CFJUOdXqnhIyFnS3v2bF0e6FiDqkEd6EcNxuP7HoPWZMepeqUK2hG","ikun111","127.0.0.1","Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/143.0.0.0 Safari\/537.36 Edg\/143.0.0.0"]
+[29-Jun-2026 22:48:05 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:48:05 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:48:05 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[29-Jun-2026 22:48:05 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE ip = ? | Params: ["127.0.0.1"]
+[29-Jun-2026 22:48:05 Asia/Shanghai] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_login_ip' in 'field list' | SQL: UPDATE users SET last_login = NOW(), last_login_ip = ?, last_login_ua = ? WHERE id = ? | Params: ["127.0.0.1","Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/143.0.0.0 Safari\/537.36 Edg\/143.0.0.0",4]
+[29-Jun-2026 22:49:03 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:49:03 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[29-Jun-2026 22:49:03 Asia/Shanghai] PHP Stack trace:
+[29-Jun-2026 22:49:03 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[29-Jun-2026 22:49:48 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 22:49:48 Asia/Shanghai] PHP Notice:  Undefined variable: error in D:\wangzhan\127.0.0.2\login.php on line 58
+[29-Jun-2026 22:49:48 Asia/Shanghai] PHP Stack trace:
+[29-Jun-2026 22:49:48 Asia/Shanghai] PHP   1. {main}() D:\wangzhan\127.0.0.2\login.php:0
+[29-Jun-2026 23:50:37 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 23:50:41 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 23:50:41 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 23:50:41 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[29-Jun-2026 23:50:41 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[29-Jun-2026 23:50:41 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE ip = ? | Params: ["127.0.0.1"]
+[29-Jun-2026 23:50:41 Asia/Shanghai] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_login_ip' in 'field list' | SQL: UPDATE users SET last_login = NOW(), last_login_ip = ?, last_login_ua = ? WHERE id = ? | Params: ["127.0.0.1","Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/143.0.0.0 Safari\/537.36 Edg\/143.0.0.0",1]
+[30-Jun-2026 12:37:35 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:21:17 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:21:22 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:21:22 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:21:22 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:21:22 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[10-Sep-2026 13:21:22 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[10-Sep-2026 13:21:22 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[10-Sep-2026 13:21:26 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:21:26 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:21:26 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:21:26 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[10-Sep-2026 13:21:26 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[10-Sep-2026 13:21:26 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[10-Sep-2026 13:21:33 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:21:33 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:21:33 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:21:33 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[10-Sep-2026 13:21:33 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[10-Sep-2026 13:21:33 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[10-Sep-2026 13:21:55 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:22:01 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:22:01 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:22:01 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:22:01 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[10-Sep-2026 13:22:01 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE attempted_at < DATE_SUB(NOW(), INTERVAL 30 MINUTE) | Params: []
+[10-Sep-2026 13:22:01 Asia/Shanghai] Security::recordLoginFailure error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist
+[10-Sep-2026 13:22:34 Asia/Shanghai] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'register_ip' in 'field list' | SQL: INSERT INTO users (username, email, password, nickname, role, status, register_ip, register_ua, created_at)
+                    VALUES (?, ?, ?, ?, 'user', 1, ?, ?, NOW()) | Params: ["heicat","zess22o@qq.com","$2y$10$gIQx1R\/p1xYhd28TfuvJauYosxxd9F67yI0hVw6\/Sg2eYLrMkC2DG","123123","127.0.0.1","Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/152.0.0.0 Safari\/537.36 Edg\/152.0.0.0"]
+[10-Sep-2026 13:22:34 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:22:34 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:22:34 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[10-Sep-2026 13:22:34 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE ip = ? | Params: ["127.0.0.1"]
+[10-Sep-2026 13:22:34 Asia/Shanghai] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_login_ip' in 'field list' | SQL: UPDATE users SET last_login = NOW(), last_login_ip = ?, last_login_ua = ? WHERE id = ? | Params: ["127.0.0.1","Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/152.0.0.0 Safari\/537.36 Edg\/152.0.0.0",5]
+[10-Sep-2026 13:24:12 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:24:17 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:24:17 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:24:17 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:24:17 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: SELECT attempted_at FROM login_attempts WHERE ip = ? ORDER BY attempted_at DESC LIMIT 1 | Params: ["127.0.0.1"]
+[10-Sep-2026 13:24:17 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.login_attempts' doesn't exist | SQL: DELETE FROM login_attempts WHERE ip = ? | Params: ["127.0.0.1"]
+[10-Sep-2026 13:24:17 Asia/Shanghai] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'last_login_ip' in 'field list' | SQL: UPDATE users SET last_login = NOW(), last_login_ip = ?, last_login_ua = ? WHERE id = ? | Params: ["127.0.0.1","Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/152.0.0.0 Safari\/537.36 Edg\/152.0.0.0",1]
+[10-Sep-2026 13:46:21 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:47:25 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ip_blacklist' doesn't exist | SQL: SELECT * FROM ip_blacklist WHERE ip = ? AND ban_until > NOW() | Params: ["127.0.0.1"]
+[10-Sep-2026 13:47:40 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ucenter_settings' doesn't exist | SQL: SELECT setting_key, setting_value FROM ucenter_settings LIMIT 10000 | Params: []
+[10-Sep-2026 13:48:18 Asia/Shanghai] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'family_tree.ucenter_settings' doesn't exist | SQL: SELECT setting_key, setting_value FROM ucenter_settings LIMIT 10000 | Params: []
+[17-Sep-2026 20:46:20 Asia/Shanghai] PHP Warning:  curl_getinfo(): supplied resource is not a valid cURL handle resource in D:\wangzhan\127.0.0.2\includes\UCenter.php on line 294
+[17-Sep-2026 20:46:20 Asia/Shanghai] PHP Warning:  curl_getinfo(): supplied resource is not a valid cURL handle resource in D:\wangzhan\127.0.0.2\includes\UCenter.php on line 294
+[17-Sep-2026 20:58:41 Asia/Shanghai] PHP Warning:  curl_getinfo(): supplied resource is not a valid cURL handle resource in D:\wangzhan\127.0.0.2\includes\UCenter.php on line 309
+[17-Sep-2026 20:58:43 Asia/Shanghai] PHP Warning:  curl_getinfo(): supplied resource is not a valid cURL handle resource in D:\wangzhan\127.0.0.2\includes\UCenter.php on line 309
+[17-Sep-2026 21:10:08 Asia/Shanghai] PHP Warning:  curl_getinfo(): supplied resource is not a valid cURL handle resource in D:\wangzhan\127.0.0.2\includes\UCenter.php on line 309
+[17-Sep-2026 21:10:08 Asia/Shanghai] PHP Warning:  curl_getinfo(): supplied resource is not a valid cURL handle resource in D:\wangzhan\127.0.0.2\includes\UCenter.php on line 309
+[17-Sep-2026 21:10:11 Asia/Shanghai] PHP Warning:  curl_getinfo(): supplied resource is not a valid cURL handle resource in D:\wangzhan\127.0.0.2\includes\UCenter.php on line 309
+[17-Sep-2026 21:21:21 Asia/Shanghai] PHP Warning:  curl_getinfo(): supplied resource is not a valid cURL handle resource in D:\wangzhan\127.0.0.2\includes\UCenter.php on line 309
+[17-Sep-2026 21:21:21 Asia/Shanghai] PHP Warning:  curl_getinfo(): supplied resource is not a valid cURL handle resource in D:\wangzhan\127.0.0.2\includes\UCenter.php on line 309
